@@ -1,0 +1,169 @@
+<acceptance-test-run title="Looking up the definition of a wrong spelled &apos;&lt;word&gt;&apos;" name="Looking up the definition of a wrong spelled &apos;&lt;word&gt;&apos;" steps="12" successful="12" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="34715" timestamp="2015-08-23T00:48:55.945-03:00">
+  <user-story id="LookupADidYouMean" name="Lookup a did you mean" path="mc437/ra150573/stories/consult_dictionary/LookupADidYouMean.story"/>
+  <tags>
+    <tag name="Consult dictionary/Lookup a did you mean" type="story"/>
+    <tag name="Lookup a did you mean" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>word</header>
+      <header>didYouMean</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>peear</value>
+        <value>Did you mean: pearl</value>
+      </row>
+      <row result="SUCCESS">
+        <value>aple</value>
+        <value>Did you mean: apple</value>
+      </row>
+      <row result="SUCCESS">
+        <value>bananna</value>
+        <value>Did you mean: banana</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {word=peear, didYouMean=Did you mean: pearl}" result="SUCCESS">
+    <test-group name="Given the user is on the Wikionary home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="da9d0983c0c2e854e4d38cb54e849578_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="8378">
+        <screenshots>
+          <screenshot image="da9d0983c0c2e854e4d38cb54e849578_NONE.png"/>
+        </screenshots>
+        <description>Is the home page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When the user looks up the definition of the word &apos;{peear}&apos;" result="SUCCESS">
+      <screenshots>
+        <screenshot image="da9d0983c0c2e854e4d38cb54e849578_NONE.png"/>
+        <screenshot image="5c7b837ff442ddabc3636fcb6ce9dad6_NONE.png"/>
+      </screenshots>
+      <test-group name="Looks for: &lt;span class=&apos;step-parameter&apos;&gt;peear&lt;/span&gt;" result="SUCCESS">
+        <screenshots>
+          <screenshot image="da9d0983c0c2e854e4d38cb54e849578_NONE.png"/>
+          <screenshot image="5c7b837ff442ddabc3636fcb6ce9dad6_NONE.png"/>
+        </screenshots>
+        <test-step result="SUCCESS" duration="2528">
+          <screenshots>
+            <screenshot image="da9d0983c0c2e854e4d38cb54e849578_NONE.png"/>
+            <screenshot image="f0d115bc201eac41a1a43a3af6cb91f3_NONE.png"/>
+          </screenshots>
+          <description>Enters: &lt;span class=&apos;step-parameter&apos;&gt;peear&lt;/span&gt;</description>
+        </test-step>
+        <test-step result="SUCCESS" duration="2440">
+          <screenshots>
+            <screenshot image="f0d115bc201eac41a1a43a3af6cb91f3_NONE.png"/>
+            <screenshot image="3fd313d124b3dc42332277513fec52c8_NONE.png"/>
+          </screenshots>
+          <description>Starts search</description>
+        </test-step>
+      </test-group>
+    </test-group>
+    <test-step result="SUCCESS" duration="643">
+      <screenshots>
+        <screenshot image="5c7b837ff442ddabc3636fcb6ce9dad6_NONE.png"/>
+      </screenshots>
+      <description>Then they should see the tip &apos;{Did you mean: pearl}&apos;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[2] {word=aple, didYouMean=Did you mean: apple}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="5c7b837ff442ddabc3636fcb6ce9dad6_NONE.png"/>
+    </screenshots>
+    <test-group name="Given the user is on the Wikionary home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="5c7b837ff442ddabc3636fcb6ce9dad6_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="2004">
+        <screenshots>
+          <screenshot image="5c7b837ff442ddabc3636fcb6ce9dad6_NONE.png"/>
+          <screenshot image="da9d0983c0c2e854e4d38cb54e849578_NONE.png"/>
+        </screenshots>
+        <description>Is the home page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When the user looks up the definition of the word &apos;{aple}&apos;" result="SUCCESS">
+      <screenshots>
+        <screenshot image="da9d0983c0c2e854e4d38cb54e849578_NONE.png"/>
+      </screenshots>
+      <test-group name="Looks for: &lt;span class=&apos;step-parameter&apos;&gt;aple&lt;/span&gt;" result="SUCCESS">
+        <screenshots>
+          <screenshot image="da9d0983c0c2e854e4d38cb54e849578_NONE.png"/>
+        </screenshots>
+        <test-step result="SUCCESS" duration="2379">
+          <screenshots>
+            <screenshot image="da9d0983c0c2e854e4d38cb54e849578_NONE.png"/>
+            <screenshot image="94c20c4b394ebaa4e3f209565c57edae_NONE.png"/>
+          </screenshots>
+          <description>Enters: &lt;span class=&apos;step-parameter&apos;&gt;aple&lt;/span&gt;</description>
+        </test-step>
+        <test-step result="SUCCESS" duration="2511">
+          <screenshots>
+            <screenshot image="94c20c4b394ebaa4e3f209565c57edae_NONE.png"/>
+            <screenshot image="6052e674bef78121e3b0241cbf7d40fb_NONE.png"/>
+          </screenshots>
+          <description>Starts search</description>
+        </test-step>
+      </test-group>
+    </test-group>
+    <test-step result="SUCCESS" duration="675">
+      <screenshots>
+        <screenshot image="6052e674bef78121e3b0241cbf7d40fb_NONE.png"/>
+      </screenshots>
+      <description>Then they should see the tip &apos;{Did you mean: apple}&apos;</description>
+    </test-step>
+  </test-group>
+  <test-group name="[3] {word=bananna, didYouMean=Did you mean: banana}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="6052e674bef78121e3b0241cbf7d40fb_NONE.png"/>
+    </screenshots>
+    <test-group name="Given the user is on the Wikionary home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="6052e674bef78121e3b0241cbf7d40fb_NONE.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="2065">
+        <screenshots>
+          <screenshot image="6052e674bef78121e3b0241cbf7d40fb_NONE.png"/>
+          <screenshot image="da9d0983c0c2e854e4d38cb54e849578_NONE.png"/>
+        </screenshots>
+        <description>Is the home page</description>
+      </test-step>
+    </test-group>
+    <test-group name="When the user looks up the definition of the word &apos;{bananna}&apos;" result="SUCCESS">
+      <screenshots>
+        <screenshot image="da9d0983c0c2e854e4d38cb54e849578_NONE.png"/>
+      </screenshots>
+      <test-group name="Looks for: &lt;span class=&apos;step-parameter&apos;&gt;bananna&lt;/span&gt;" result="SUCCESS">
+        <screenshots>
+          <screenshot image="da9d0983c0c2e854e4d38cb54e849578_NONE.png"/>
+        </screenshots>
+        <test-step result="SUCCESS" duration="2196">
+          <screenshots>
+            <screenshot image="da9d0983c0c2e854e4d38cb54e849578_NONE.png"/>
+            <screenshot image="0cef45bc7f24faecdd9beb9cc5f31121_NONE.png"/>
+          </screenshots>
+          <description>Enters: &lt;span class=&apos;step-parameter&apos;&gt;bananna&lt;/span&gt;</description>
+        </test-step>
+        <test-step result="SUCCESS" duration="2427">
+          <screenshots>
+            <screenshot image="0cef45bc7f24faecdd9beb9cc5f31121_NONE.png"/>
+            <screenshot image="797d1671630f12d6c2baaa29e5952d17_NONE.png"/>
+          </screenshots>
+          <description>Starts search</description>
+        </test-step>
+      </test-group>
+    </test-group>
+    <test-step result="SUCCESS" duration="690">
+      <screenshots>
+        <screenshot image="797d1671630f12d6c2baaa29e5952d17_NONE.png"/>
+      </screenshots>
+      <description>Then they should see the tip &apos;{Did you mean: banana}&apos;</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

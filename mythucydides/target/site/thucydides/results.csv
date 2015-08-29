@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Lookup a definition","Looking up the definition of '<word>'","SUCCESS","2015-08-23T03:48:10.050Z","0.0","45.56"
+"Lookup a did you mean","Looking up the definition of a wrong spelled '<word>'","SUCCESS","2015-08-23T03:48:55.945Z","0.0","34.72"

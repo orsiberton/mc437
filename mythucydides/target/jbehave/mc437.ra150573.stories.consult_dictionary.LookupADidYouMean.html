@@ -1,0 +1,42 @@
+<div class="story">
+<h1></h1>
+<div class="path">mc437/ra150573/stories/consult_dictionary/LookupADidYouMean.story</div>
+<div class="scenario">
+<h2>Scenario: Looking up the definition of a wrong spelled '&lt;word&gt;'</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given the user is on the Wikionary home page</div>
+<div class="step">When the user looks up the definition of the word '&lt;word&gt;'</div>
+<div class="step">Then they should see the tip '&lt;didYouMean&gt;'</div>
+<table>
+<thead>
+<tr>
+<th>word</th><th>didYouMean</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>peear</td><td>Did you mean: pearl</td></tr>
+<tr>
+<td>aple</td><td>Did you mean: apple</td></tr>
+<tr>
+<td>bananna</td><td>Did you mean: banana</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {word=peear, didYouMean=Did you mean: pearl}</h3>
+<div class="step successful">Given the user is on the Wikionary home page</div>
+<div class="step successful">When the user looks up the definition of the word '<span class="step parameter">peear</span>'</div>
+<div class="step successful">Then they should see the tip '<span class="step parameter">Did you mean: pearl</span>'</div>
+
+<h3 class="example">Example: {word=aple, didYouMean=Did you mean: apple}</h3>
+<div class="step successful">Given the user is on the Wikionary home page</div>
+<div class="step successful">When the user looks up the definition of the word '<span class="step parameter">aple</span>'</div>
+<div class="step successful">Then they should see the tip '<span class="step parameter">Did you mean: apple</span>'</div>
+
+<h3 class="example">Example: {word=bananna, didYouMean=Did you mean: banana}</h3>
+<div class="step successful">Given the user is on the Wikionary home page</div>
+<div class="step successful">When the user looks up the definition of the word '<span class="step parameter">bananna</span>'</div>
+<div class="step successful">Then they should see the tip '<span class="step parameter">Did you mean: banana</span>'</div>
+</div>
+</div>
+</div>

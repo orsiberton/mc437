@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>mc437.ra150573.stories.consult_dictionary.LookupADefinition</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+<story path="mc437/ra150573/stories/consult_dictionary/LookupADefinition.story" title="">
+<scenario keyword="Scenario:" title="Looking up the definition of &apos;&lt;word&gt;&apos;">
+<examples keyword="Examples:">
+<step>Given the user is on the Wikionary home page</step>
+<step>When the user looks up the definition of the word &apos;&lt;word&gt;&apos;</step>
+<step>Then they should see the definition &apos;&lt;definition&gt;&apos;</step>
+<parameters>
+<names><name>word</name><name>definition</name></names>
+<values><value>apple</value><value>A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.</value></values>
+<values><value>pear</value><value>An edible fruit produced by the pear tree, similar to an apple but elongated towards the stem.</value></values>
+<values><value>bruno</value><value>(dark) brown</value></values>
+</parameters>
+
+<example keyword="Example:">{word=apple, definition=A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.}</example>
+<step outcome="successful">Given the user is on the Wikionary home page</step>
+<step outcome="successful">When the user looks up the definition of the word &apos;<parameter>apple</parameter>&apos;</step>
+<step outcome="successful">Then they should see the definition &apos;<parameter>A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.</parameter>&apos;</step>
+
+<example keyword="Example:">{word=pear, definition=An edible fruit produced by the pear tree, similar to an apple but elongated towards the stem.}</example>
+<step outcome="successful">Given the user is on the Wikionary home page</step>
+<step outcome="successful">When the user looks up the definition of the word &apos;<parameter>pear</parameter>&apos;</step>
+<step outcome="successful">Then they should see the definition &apos;<parameter>An edible fruit produced by the pear tree, similar to an apple but elongated towards the stem.</parameter>&apos;</step>
+
+<example keyword="Example:">{word=bruno, definition=(dark) brown}</example>
+<step outcome="successful">Given the user is on the Wikionary home page</step>
+<step outcome="successful">When the user looks up the definition of the word &apos;<parameter>bruno</parameter>&apos;</step>
+<step outcome="successful">Then they should see the definition &apos;<parameter>(dark) brown</parameter>&apos;</step>
+</examples>
+</scenario>
+</story>
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

@@ -1,0 +1,30 @@
+<story path="mc437/ra150573/stories/consult_dictionary/LookupADidYouMean.story" title="">
+<scenario keyword="Scenario:" title="Looking up the definition of a wrong spelled &apos;&lt;word&gt;&apos;">
+<examples keyword="Examples:">
+<step>Given the user is on the Wikionary home page</step>
+<step>When the user looks up the definition of the word &apos;&lt;word&gt;&apos;</step>
+<step>Then they should see the tip &apos;&lt;didYouMean&gt;&apos;</step>
+<parameters>
+<names><name>word</name><name>didYouMean</name></names>
+<values><value>peear</value><value>Did you mean: pearl</value></values>
+<values><value>aple</value><value>Did you mean: apple</value></values>
+<values><value>bananna</value><value>Did you mean: banana</value></values>
+</parameters>
+
+<example keyword="Example:">{word=peear, didYouMean=Did you mean: pearl}</example>
+<step outcome="successful">Given the user is on the Wikionary home page</step>
+<step outcome="successful">When the user looks up the definition of the word &apos;<parameter>peear</parameter>&apos;</step>
+<step outcome="successful">Then they should see the tip &apos;<parameter>Did you mean: pearl</parameter>&apos;</step>
+
+<example keyword="Example:">{word=aple, didYouMean=Did you mean: apple}</example>
+<step outcome="successful">Given the user is on the Wikionary home page</step>
+<step outcome="successful">When the user looks up the definition of the word &apos;<parameter>aple</parameter>&apos;</step>
+<step outcome="successful">Then they should see the tip &apos;<parameter>Did you mean: apple</parameter>&apos;</step>
+
+<example keyword="Example:">{word=bananna, didYouMean=Did you mean: banana}</example>
+<step outcome="successful">Given the user is on the Wikionary home page</step>
+<step outcome="successful">When the user looks up the definition of the word &apos;<parameter>bananna</parameter>&apos;</step>
+<step outcome="successful">Then they should see the tip &apos;<parameter>Did you mean: banana</parameter>&apos;</step>
+</examples>
+</scenario>
+</story>

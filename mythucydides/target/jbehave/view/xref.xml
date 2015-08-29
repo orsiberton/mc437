@@ -1,0 +1,47 @@
+<xref>
+  <whenMade>1440301773405</whenMade>
+  <createdBy>JBehave</createdBy>
+  <metaFilter>-ignore</metaFilter>
+  <meta/>
+  <stories>
+    <story>
+      <description></description>
+      <narrative></narrative>
+      <name>LookupADefinition.story</name>
+      <path>mc437/ra150573/stories/consult_dictionary/LookupADefinition.story</path>
+      <html>mc437.ra150573.stories.consult_dictionary.LookupADefinition.html</html>
+      <meta></meta>
+      <scenarios>Scenario:Looking up the definition of &apos;&lt;word&gt;&apos;
+Given the user is on the Wikionary home page
+When the user looks up the definition of the word &apos;&lt;word&gt;&apos;
+Then they should see the definition &apos;&lt;definition&gt;&apos;
+
+
+</scenarios>
+      <passed>true</passed>
+      <pending>false</pending>
+      <started>1440301689987</started>
+      <duration>45748</duration>
+    </story>
+    <story>
+      <description></description>
+      <narrative></narrative>
+      <name>LookupADidYouMean.story</name>
+      <path>mc437/ra150573/stories/consult_dictionary/LookupADidYouMean.story</path>
+      <html>mc437.ra150573.stories.consult_dictionary.LookupADidYouMean.html</html>
+      <meta></meta>
+      <scenarios>Scenario:Looking up the definition of a wrong spelled &apos;&lt;word&gt;&apos;
+Given the user is on the Wikionary home page
+When the user looks up the definition of the word &apos;&lt;word&gt;&apos;
+Then they should see the tip &apos;&lt;didYouMean&gt;&apos;
+
+
+</scenarios>
+      <passed>true</passed>
+      <pending>false</pending>
+      <started>1440301735942</started>
+      <duration>34720</duration>
+    </story>
+  </stories>
+  <stepMatches/>
+</xref>

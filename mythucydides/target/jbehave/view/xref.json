@@ -1,0 +1,35 @@
+{"xref": {
+  "whenMade": 1440301773405,
+  "createdBy": "JBehave",
+  "metaFilter": "-ignore",
+  "meta": [],
+  "stories": [
+    {
+      "description": "",
+      "narrative": "",
+      "name": "LookupADefinition.story",
+      "path": "mc437/ra150573/stories/consult_dictionary/LookupADefinition.story",
+      "html": "mc437.ra150573.stories.consult_dictionary.LookupADefinition.html",
+      "meta": "",
+      "scenarios": "Scenario:Looking up the definition of '<word>'\u000aGiven the user is on the Wikionary home page\u000aWhen the user looks up the definition of the word '<word>'\u000aThen they should see the definition '<definition>'\u000a\u000a\u000a",
+      "passed": true,
+      "pending": false,
+      "started": 1440301689987,
+      "duration": 45748
+    },
+    {
+      "description": "",
+      "narrative": "",
+      "name": "LookupADidYouMean.story",
+      "path": "mc437/ra150573/stories/consult_dictionary/LookupADidYouMean.story",
+      "html": "mc437.ra150573.stories.consult_dictionary.LookupADidYouMean.html",
+      "meta": "",
+      "scenarios": "Scenario:Looking up the definition of a wrong spelled '<word>'\u000aGiven the user is on the Wikionary home page\u000aWhen the user looks up the definition of the word '<word>'\u000aThen they should see the tip '<didYouMean>'\u000a\u000a\u000a",
+      "passed": true,
+      "pending": false,
+      "started": 1440301735942,
+      "duration": 34720
+    }
+  ],
+  "stepMatches": []
+}}
