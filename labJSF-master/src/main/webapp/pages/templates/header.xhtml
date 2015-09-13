@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+  	  xmlns:h="http://xmlns.jcp.org/jsf/html"
+	  xmlns:f="http://xmlns.jcp.org/jsf/core"
+	  xmlns:p="http://primefaces.org/ui">
+<h:body>
+	<ui:composition>
+		<h:form id="formHeader">
+
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<p:commandLink action="home" value="Home" styleClass="navbar-brand" />
+						<p:commandLink action="graficos" value="#{mensagens['graficos']}" styleClass="navbar-brand" />
+						<p:commandLink action="images" value="#{mensagens['upload.imagem']}" styleClass="navbar-brand" />
+					</div>
+					
+					<div style="float: right">
+						<h:outputText value="#{mensagens['internacionalizacao.texto']}:" styleClass="navbar-brand" />
+						<p:selectOneMenu value="#{configMB.linguaEscolhida}">
+							<f:selectItems value="#{configMB.linguas}" />
+							<f:ajax listener="#{configMB.alterarIdioma}" render="formHeader :page" />
+						</p:selectOneMenu>
+					</div>
+				</div>
+			</nav>
+		</h:form>
+	</ui:composition>
+</h:body>
+</html>
